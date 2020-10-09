@@ -1,72 +1,100 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>You played rock!</title>
+	<title>You played rock!</title>
 
-  <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
-  <meta charset="utf-8">
+	<!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
+	<meta charset="utf-8">
 
-  <link rel="stylesheet" href="/my_styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+	<!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
+	<meta charset="utf-8">
+
+	<!-- Connect Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<!-- Connect Bootstrap JavaScript and its dependencies -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Connect Font Awesome -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
+	<!-- Make it responsive to small screens -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+	<link rel="stylesheet" href="/my_oversides.css">
+	<!-- <style>
+		* {
+			border: thin red solid;
+		} -->
+	</style>
+
 </head>
 
 <body>
-  <div class="container">
-    <div class="row mb-medium">
-      <div class="one-third">
-        <a class="button" href="/rock">
-          Play Rock
-        </a>
-      </div>
+	<div class="container">
+		<div class="row mb-3 mt-5">
 
-      <div class="one-third">
-        <a class="button" href="/paper">
-          Play Paper
-        </a>
-      </div>
+			<div class="col-4">
+				<a class="btn btn-info btn-block" href="/rock">
+					<span class ="hide-on-small"><i class="far fa-hand-rock"></i> Play Rock </span>
+				</a>
+			</div>
 
-      <div class="one-third">
-        <a class="button" href="/scissors">
-          Play Scissors
-        </a>
-      </div>
-    </div>
+			<div class="col-4">
+				<a class="btn btn-outline-info btn-block" href="/paper">
+					<span> <i class="far fa-hand-paper"></i> Play Paper</span>
+				</a>
+			</div>
 
-    <div class="row mb-medium">
-      <div class="one-half">
-        <div class="player-card centered">
-          <h2>
-            <em>We</em> <strong>played</strong> <a href="https:/www.google.com">rock</a>!
-          </h2>
-        </div>
-      </div>
+			<div class="col-4">
+				<a class="btn btn-outline-info btn-block" href="/scissors">
+					<span><i class="far fa-hand-scissors"></i> Play Scissors</span>
+				</a>
+			</div>
+		</div>
 
-      <div class="one-half">
-        <div class="computer-card centered">
-          <h2>
-            They played paper!
-          </h2>
-        </div>
-      </div>
-    </div>
+		<div class="row mb-3 text-center">
+			<div class="col-sm-6">
+				<div class="card border-success mb-3">
+					<div class="card-body text-success">
+						<h5 class="card-title text-center">We played rock! </h5>
+						<h6 class="card-text"> <i class="far fa-hand-rock fa-7x"></i></h6>
+					</div>
+				</div>
+			</div>
 
-    <div class="row-center mb-medium">
-      <div class="two-thirds">
-        <div class="outcome-card centered">
-          <h2>
-            We lost!
-          </h2>
-        </div>
-      </div>
-    </div>
 
-    <div class="row-center mb-medium">
-      <div class="full-width centered">
-        <a href="/">
-          Rules
-        </a>
-      </div>
-    </div>
-  </div>
+			<div class="col-sm-6">
+				<div class="card border-danger mb-3">
+					<div class="card-body text-danger">
+						<h5 class="card-title text-center">They played paper!</h5>
+            <h6 class="card-text"><i class="far fa-hand-paper fa-7x"></i></h6>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mb-3 text-center">
+			<div class="offset-md-2 col-md-8  ">
+				<div class="alert alert-danger" role="alert">
+					<h2> We lost!</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="row text-center">
+			<div class="col-md-12">
+				<a href="/"> Rules</a>
+			</div>
+		</div>
+
+	</div>
 </body>
+
 </html>
